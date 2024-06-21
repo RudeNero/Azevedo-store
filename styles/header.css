@@ -1,0 +1,23 @@
+header {
+    background-color: #869AFF;
+    /* Cor de fundo lilás */
+    color: #fff;
+    /* Cor do texto */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    margin-bottom: 10px;
+}
+
+.header-content {
+    max-width: 1200px;
+    /* Largura máxima do conteúdo do header */
+    margin: 0 auto;
+    /* Centraliza o conteúdo horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content h1 {
+    font-size: 1.5rem;
+}

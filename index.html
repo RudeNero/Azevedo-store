@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azevedo Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/provisório/ragIco2.png"/>
+    
+  </head>
+  <body>
+    <header>
+        <div class="header-content">
+            <h1>Meu Site</h1>
+    </header>
+    <main>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/asset_teste/mago.png" alt="Imagem 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/asset_teste/ninja.png" alt="Imagem 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/asset_teste/shura.png" alt="Imagem 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/asset_teste/kina.jpg" alt="Imagem 4" />
+          </div>
+        </div>
+        
+        <div class="swiper-button-prev"><img src="./assets/provisório/seta.png" alt="seta" class="button_nav prev"></div>
+        <div class="swiper-button-next"><img src="./assets/provisório/seta.png" alt="seta" class="button_nav next"></div>
+      </div>
+      <div class="container_horario">
+        <h2 class="text">HORÁRIO DE ATENDIMENTO 08:00 ÀS 23:59</h2>
+      </div>
+      <div class="container">
+        <div class="box">
+        <img src="assets/provisório/100KK.png" alt="100kk_img" />
+        <button>
+            <a href="#"><span class="button_top">Comprar</span></a>
+          </button>
+        </div>
+        <div class="box">
+          <img src="assets/provisório/500kk.png" alt="500kk_img" />
+          <button>
+            <a href="#"><span class="button_top">Comprar</span></a>
+          </button>
+        </div>
+        <div class="box">
+          <img src="assets/provisório/1B.png" alt="1B_img" />
+          <button>
+            <a href="#"><span class="button_top">Comprar</span></a>
+          </button>
+        </div>
+        <div class="box">
+          <img src="assets/provisório/10B.png" alt="10B_img" />
+          <button>
+            <a href="#"><span class="button_top">Comprar</a></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container_quit">
+        <img src="./assets/provisório/venda_quit_placeholder.jpg" alt="quit">
+      </div>
+     
+      <div class="container_ref">
+      <button>
+       <span class="button_top"><h2 class="text"> CLIQUE AQUI PARA VER NOSSAS REFERÊNCIAS</h2>
+      </span>
+      </button>
+      </div>
+
+
+
+      <!-- USAR PARA LEVAR AO GRUPO DO FACEBOOK QUANDO CLICAR 
+     <a href="https://www.facebook.com/groups/603133823040009" target="_blank"><button class="button_facebook">
+      </button></a>
+     -->
+
+
+      <a  href="https://wa.me/5511983455461?text=Teste%20Teste" target=”_blank” class="whats"><img alt="Chat on WhatsApp" src="./assets/whats_logo/COMUNISTA.png" class="img-whats"/></a>
+ 
+    </main>
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 0,
+        slidesPerView: 1, // Mostrar apenas um slide por vez
+        loop: true, // Habilitar o loop infinito
+        autoplay: {
+          delay: 5000, // Intervalo de tempo em milissegundos entre cada slide
+          disableOnInteraction: false, // Manter o autoplay mesmo se o usuário interagir
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "arrows",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

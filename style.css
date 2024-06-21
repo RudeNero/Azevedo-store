@@ -1,0 +1,233 @@
+@import url(./styles/carrossel.css);
+@import url(./styles/header.css);
+@import url(./styles/facebook.css);
+
+/* reset.css */
+/* Um reset básico para normalizar estilos em todos os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #869AFF;
+}
+
+/* style.css */
+/* Container principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+
+
+.box {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    width: calc(25% - 20px);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+/* Estilo para o botão */
+button {
+    --button_radius: 0.75em;
+    --button_color: #3CF4C4;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    margin-top: auto;
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease;
+}
+
+.container_ref{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 60px;
+    position: relative;
+}
+
+
+
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+}
+
+button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+}
+
+.whats{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    background-color: transparent;
+    
+    
+}
+
+.text{
+    background-color: #f4f4f4;
+}
+
+.img-whats{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    
+}
+
+.container_horario {
+    display: flex;
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+    padding: 10px;
+    /* Reduz o espaçamento interno */
+    margin: 20px auto;
+    /* Centraliza a div e adiciona espaçamento acima e abaixo */
+    border-radius: 16px;
+    /* Borda levemente arredondada */
+    background-color: #f4f4f4;
+    /* Cor de fundo */
+    border: 1px solid #ccc;
+    /* Borda */
+    width: auto;
+    /* Permite que a largura seja ajustada automaticamente ao conteúdo */
+    min-width: 300px;
+    /* Define uma largura mínima para evitar que a div seja muito estreita */
+    max-width: 600px;
+    /* Define uma largura máxima para evitar que a div se expanda muito */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra suave */
+    text-align: center;
+    /* Centraliza o texto dentro da div */
+}
+
+
+.container_quit{
+    padding: 20px 21.2px 20px  2.5em;
+    display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .box {
+        width: calc(50% - 20px);
+    }
+
+    .container {
+        row-gap: 35px;
+        column-gap: 10px;
+    }
+
+    .banner {
+    width: 95%;
+    }
+
+    button {
+        width: calc(50% - 20px);
+        max-width: 28vw;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px){
+    .container {
+        row-gap: 30px;
+        column-gap: 10px;
+        
+    }
+
+
+    .container_horario {
+        min-width: 200px;
+    /* Reduz a largura mínima em telas menores */
+        width: 90%;
+    /* Define a largura como 90% da tela */
+    }
+    .box {
+        width: calc(50% - 10px);
+    }
+
+    .banner{
+        width: 90%;
+    }
+
+    button {
+        width: calc(80% - 20px);
+        max-width: 28vw;
+        font-size: 14px;
+    }
+
+    .whats{
+        right: 20px;
+    }
+
+    .img-whats {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container_quit {
+        display: block;
+    }
+}
