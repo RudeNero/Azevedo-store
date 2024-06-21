@@ -58,16 +58,11 @@ button {
     transition: transform 0.1s ease;
 }
 
-.container_ref{
+.container_ref {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    padding-top: 60px;
-    position: relative;
+    
 }
-
 
 
 
@@ -230,4 +225,6 @@ button:active .button_top {
     .container_quit {
         display: block;
     }
+
+   
 }
