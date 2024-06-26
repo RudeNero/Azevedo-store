@@ -9,8 +9,17 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #869AFF;
+    
+    
 }
 
+body{
+    cursor: url('./assets/provisório/Arrow.png'), auto;
+}
+
+a {
+    cursor: url('./assets/provisório/Hand.png'), auto;
+}
 /* style.css */
 /* Container principal */
 .container {

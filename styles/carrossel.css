@@ -57,7 +57,7 @@
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-    
+    cursor: url('../assets/provisório/Hand.png'), auto;
 }
 
 .swiper-button-prev {
