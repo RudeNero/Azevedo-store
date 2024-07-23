@@ -1,6 +1,7 @@
 @import url(./styles/carrossel.css);
 @import url(./styles/header.css);
 @import url(./styles/facebook.css);
+@import url(./styles/footer.css);
 
 /* reset.css */
 /* Um reset básico para normalizar estilos em todos os navegadores */
@@ -8,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #869AFF;
+    background-color: linear-gradient(180deg, rgba(86, 24, 232, 1) 0%, rgba(38, 10, 77, 1) 100%);
     
     
 }
@@ -22,7 +23,7 @@ a {
 }
 /* style.css */
 /* Container principal */
-.container {
+.container_precos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -59,21 +60,13 @@ button {
     margin-top: auto;
     display: block;
     position: absolute;
-    bottom: -25px;
+    bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.1s ease;
 }
-
-.container_ref {
-    display: flex;
-    justify-content: center;
-    
-}
-
-
 
 .button_top {
     display: block;
@@ -151,12 +144,59 @@ button:active .button_top {
 }
 
 
-.container_quit{
-    padding: 20px 21.2px 20px  2.5em;
+.quit-mobile{
     display: none;
-
 }
 
+.container-quit{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.container_grupo{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    
+    
+
+}
+.clickable-button {
+    position: absolute;
+    bottom: 50px;
+    /* ajuste a posição conforme necessário */
+    left: 21.6%;    
+    bottom: -91.5%;         
+    padding: 36px 208px;
+    font-size: 16px;
+    color: white;
+    background-color: #ffffff00;
+    border-radius: 10px;
+             
+             
+            
+}
+
+#mobile{
+    display: none;
+}
+       
+
+
+.container_pag{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    
+}
+
+.container_ref{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
 
 
 
@@ -220,6 +260,7 @@ button:active .button_top {
         width: calc(80% - 20px);
         max-width: 28vw;
         font-size: 14px;
+        bottom: -25px;
     }
 
     .whats{
@@ -231,9 +272,44 @@ button:active .button_top {
         height: 30px;
     }
 
-    .container_quit {
+    .quit-mobile {
         display: block;
+        margin-left: 1vh;
+        margin-right: 1vh;
+        
+
     }
 
+    .quit-desktop{
+        display: none;
+        
+    }
+
+   #desktop, .clickable-button{
+    display: none;
+   }
+
+   .grupo_mobile{
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+   }
+   #mobile{
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+   }
+
+   .img_pag{
+    max-width: 90%;
+    height: auto;
+   }
+
+   .img_ref{
+    max-width: 90%;
+    height: auto;
+   }
+    
    
 }

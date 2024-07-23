@@ -1,23 +1,29 @@
 header {
-    background-color: #869AFF;
+    background: linear-gradient(180deg, rgba(101, 19, 205, 1) 0%, rgba(80, 3, 92, 1) 100%);
     /* Cor de fundo lilás */
     color: #fff;
     /* Cor do texto */
     padding: 10px 20px;
     /* Espaçamento interno */
-    margin-bottom: 10px;
+    
 }
 
-.header-content {
-    max-width: 1200px;
+.header-img {
+    max-width: 120px;
     /* Largura máxima do conteúdo do header */
     margin: 0 auto;
     /* Centraliza o conteúdo horizontalmente */
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    }
 
 .header-content h1 {
     font-size: 1.5rem;
+}
+
+@media (min-width: 900px){
+    .header-img {
+            max-width: 1200px;
+    }
 }

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.container_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    background: linear-gradient(180deg, rgba(86, 24, 232, 1) 0%, rgba(38, 10, 77, 1) 100%);
+    padding: 20px;
+    color: white;
+}
+
+.footer_text{
+    color: #05F0E3;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.footer_contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
