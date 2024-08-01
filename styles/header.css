@@ -5,7 +5,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
+    /* Fixar o header no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Garantir que o header ocupe toda a largura da tela */
     z-index: 10;
     /* Garantir que o header fique acima de outros elementos */
 }
@@ -49,7 +54,7 @@ header {
     margin: 0;
     min-width: 160px;
     z-index: 20;
-    /* Garantir que o dropdown fique acima de outros elementos */
+    
 }
 
 .dropdown-menu .dropdown-link {
