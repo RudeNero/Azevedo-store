@@ -133,6 +133,7 @@ button:active .button_top {
     padding: 10px;
     /* Reduz o espaçamento interno */
     margin: 20px auto;
+    margin-bottom: 0px;
     /* Centraliza a div e adiciona espaçamento acima e abaixo */
     border-radius: 16px;
     /* Borda levemente arredondada */
