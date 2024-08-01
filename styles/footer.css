@@ -41,7 +41,9 @@ container_footer{
 
 
 @media (max-width: 600px){
-   
+   .img_footer{
+    object-fit: fill;
+   }
     
 
 

@@ -23,13 +23,19 @@ a {
 }
 /* style.css */
 /* Container principal */
-.container_precos {
+
+.container_precos{
+    display: flex;
+    justify-content: center;
+}
+.container_kks {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
     position: relative;
+    width: 80%;
 }
 
 
@@ -60,7 +66,7 @@ button {
     margin-top: auto;
     display: block;
     position: absolute;
-    bottom: 12px;
+    bottom: 8px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -205,8 +211,9 @@ button:active .button_top {
         column-gap: 10px;
         
     }
-    .container_precos{
+    .container_kks{
         padding-top: 0px;
+        width: 100%;
     }
 
     .container_horario {
