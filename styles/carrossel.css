@@ -79,6 +79,9 @@
     transform: rotate(180deg);
 }
 
+#cr_mobile{
+    display: none;
+}
 
 
 
@@ -101,4 +104,10 @@
         background-color: transparent;
     }
 
+    #cr_mobile{
+        display: block;
+    }
+    #cr_desktop{
+        display: none;
+    }
 }
