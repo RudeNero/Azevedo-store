@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azevedo Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./assets/provisório/ragIco2.png"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./assets/provisório/LOGO.png"
+        alt="Logotipo"
+        class="header-img"
+      />
+    </header>
+    <main>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./assets/provisório/Banner1-Fachadav2 1.png"
+              alt="Imagem 1"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/provisório/Banner1-Fachadav2 1.png"
+              alt="Imagem 2"
+            />
+          </div>
+        </div>
+
+        <div class="swiper-button-prev">
+          <img
+            src="./assets/provisório/seta.png"
+            alt="seta"
+            class="button_nav prev"
+          />
+        </div>
+        <div class="swiper-button-next">
+          <img
+            src="./assets/provisório/seta.png"
+            alt="seta"
+            class="button_nav next"
+          />
+        </div>
+      </div>
+      <div class="container_horario">
+        <h2 class="text">HORÁRIO DE ATENDIMENTO 08:00 ÀS 23:59</h2>
+      </div>
+      <div>
+        <h1>COMPRO QUIT</h1>
+        <p>
+          Lorem Ipsum é simplesmente uma simulação de texto da indústria
+          tipográfica e de impressos, e vem sendo utilizado desde o século XVI,
+          quando um impressor desconhecido pegou uma bandeja de tipos e os
+          embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum
+          sobreviveu não só a cinco séculos, como também ao salto para a
+          editoração eletrônica, permanecendo essencialmente inalterado. Se
+          popularizou na década de 60, quando a Letraset lançou decalques
+          contendo passagens de Lorem Ipsum, e mais recentemente quando passou a
+          ser integrado a softwares de editoração eletrônica como Aldus
+          PageMaker.
+        </p>
+      </div>
+
+      <div class="container_grupo">
+        <a
+          href="https://www.facebook.com/groups/603133823040009"
+          target="”_blank”"
+          class="clickable-button"
+          id="desktop"
+        ></a>
+        <img
+          src="./assets/provisório/Comunidade.png"
+          alt="comunidade"
+          id="desktop"
+        />
+        <div class="grupo_mobile">
+          <a
+            href="https://www.facebook.com/groups/603133823040009"
+            target="”_blank”"
+            ><img
+              src="./assets/provisório/Comunidade.png"
+              alt="comunidade"
+              id="mobile"
+          /></a>
+        </div>
+      </div>
+
+      <div class="container_pag">
+        <img
+          src="./assets/provisório/Banner-Pagamentos 5.png"
+          alt="FormasDePagemento"
+          class="img_pag"
+        />
+      </div>
+
+      <div class="container_grupo referencias">
+        <a
+          href="https://www.facebook.com/groups/referencias.ragnarok/permalink/2557545274460134/"
+          target="”_blank”"
+          id="desktop"
+          ><img
+            src="./assets/provisório/Banner_Referencias 1.png"
+            alt="referencias"
+            id="desktop"
+        /></a>
+
+        <div class="grupo_mobile">
+          <a
+            href="https://www.facebook.com/groups/referencias.ragnarok/permalink/2557545274460134/"
+            target="”_blank”"
+            ><img
+              src="./assets/provisório/Banner_Referencias 1.png"
+              alt="referencias"
+              id="mobile"
+          /></a>
+        </div>
+      </div>
+
+      <a
+        href="https://wa.me/554588403532?text=Teste%20dúvidas"
+        target="”_blank”"
+        class="whats"
+        ><img
+          alt="Chat on WhatsApp"
+          src="./assets/whats_logo/whatsapp logo_2.png"
+          class="img-whats"
+      /></a>
+    </main>
+    <footer class="footer">
+      <div class="container_footer">
+        <h2 class="footer_text">Formas de pagamento</h2>
+        <img src="./assets/provisório/payment_methods 1.png" alt="MetodosPag" />
+      </div>
+      <div class="container_footer footer_contato">
+        <h2 class="footer_text">Contato</h2>
+        <p>45 9 8840 3532</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 0,
+        slidesPerView: 1, // Mostrar apenas um slide por vez
+        loop: true, // Habilitar o loop infinito
+        autoplay: {
+          delay: 5000, // Intervalo de tempo em milissegundos entre cada slide
+          disableOnInteraction: false, // Manter o autoplay mesmo se o usuário interagir
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "arrows",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

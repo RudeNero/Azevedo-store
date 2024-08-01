@@ -1,5 +1,5 @@
 header {
-    background: linear-gradient(180deg, rgba(101, 19, 205, 1) 0%, rgba(80, 3, 92, 1) 100%);
+    background: linear-gradient(180deg, rgba(44, 151, 217, 1) 0%, rgba(21, 73, 140, 1) 100%);
     /* Cor de fundo lilás */
     color: #fff;
     /* Cor do texto */
@@ -9,7 +9,7 @@ header {
 }
 
 .header-img {
-    max-width: 120px;
+    width: 15em;
     /* Largura máxima do conteúdo do header */
     margin: 0 auto;
     /* Centraliza o conteúdo horizontalmente */

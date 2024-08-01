@@ -2,14 +2,14 @@
 @import url(./styles/header.css);
 @import url(./styles/facebook.css);
 @import url(./styles/footer.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 /* reset.css */
 /* Um reset básico para normalizar estilos em todos os navegadores */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: linear-gradient(180deg, rgba(86, 24, 232, 1) 0%, rgba(38, 10, 77, 1) 100%);
+    background-color: linear-gradient(180deg, rgba(44, 151, 217, 1) 0%, rgba(21, 73, 140, 1) 100%);
     
     
 }
@@ -50,7 +50,7 @@ a {
 /* Estilo para o botão */
 button {
     --button_radius: 0.75em;
-    --button_color: #3CF4C4;
+    --button_color: #9BD3EB;
     --button_outline_color: #000000;
     font-size: 17px;
     font-weight: bold;
@@ -106,6 +106,9 @@ button:active .button_top {
 
 .text{
     background-color: #f4f4f4;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .img-whats{
@@ -162,21 +165,8 @@ button:active .button_top {
     
 
 }
-.clickable-button {
-    position: absolute;
-    bottom: 50px;
-    /* ajuste a posição conforme necessário */
-    left: 21.6%;    
-    bottom: -91.5%;         
-    padding: 36px 208px;
-    font-size: 16px;
-    color: white;
-    background-color: #ffffff00;
-    border-radius: 10px;
-             
-             
-            
-}
+
+
 
 #mobile{
     display: none;
@@ -191,16 +181,11 @@ button:active .button_top {
     
 }
 
-.container_ref{
-    display: flex;
-    justify-content: center;
-    margin-top: 1em;
-    margin-bottom: 3em;
+
+
+.referencias{
+    margin-bottom: 12px;
 }
-
-
-
-
 
 
 
@@ -213,26 +198,6 @@ button:active .button_top {
 
 
 /* Responsividade */
-@media (max-width: 900px) {
-    .box {
-        width: calc(50% - 20px);
-    }
-
-    .container {
-        row-gap: 35px;
-        column-gap: 10px;
-    }
-
-    .banner {
-    width: 95%;
-    }
-
-    button {
-        width: calc(50% - 20px);
-        max-width: 28vw;
-        font-size: 14px;
-    }
-}
 
 @media (max-width: 600px){
     .container {
@@ -240,13 +205,19 @@ button:active .button_top {
         column-gap: 10px;
         
     }
-
+    .container_precos{
+        padding-top: 0px;
+    }
 
     .container_horario {
         min-width: 200px;
     /* Reduz a largura mínima em telas menores */
         width: 90%;
     /* Define a largura como 90% da tela */
+    }
+
+    .text{
+        font-size: 14px;
     }
     .box {
         width: calc(50% - 10px);
@@ -306,10 +277,7 @@ button:active .button_top {
     height: auto;
    }
 
-   .img_ref{
-    max-width: 90%;
-    height: auto;
-   }
-    
-   
+
+
+
 }

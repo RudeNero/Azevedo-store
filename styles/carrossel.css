@@ -79,15 +79,6 @@
     transform: rotate(180deg);
 }
 
-@media (max-width: 900px){
-
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        top: 28%;
-    }
-
-}
 
 
 
@@ -101,7 +92,7 @@
 
     .swiper-button-prev,
     .swiper-button-next{
-        top: 18%;
+        display: none;
     }
 
     .button_nav {
