@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-.footer{
+.footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: start;
     flex-wrap: wrap;
     background: linear-gradient(180deg, rgba(44, 151, 217, 1) 0%, rgba(21, 73, 140, 1) 100%);
@@ -10,41 +10,77 @@
     color: white;
 }
 
-.link_portfolio{
+.link_portfolio {
     display: flex;
     justify-content: center;
     background: #15498c;
+    padding: 10px 0;
 }
 
-container_footer{
-    justify-content: center;
-    padding: 90px;
+.container_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 0px;
 }
 
-
-
-.footer_text{
+.footer_text {
     color: #05F0E3;
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
+    text-align: center;
 }
 
-.footer_contato{
+.footer_contato {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 4px;
-    
 }
 
+/* Estilo específico para a imagem */
+.img_footer {
+    max-width: 100%;
+    height: auto;
+}
 
-@media (max-width: 600px){
-   .img_footer{
-    object-fit: fill;
-   }
-    
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
 
+    .container_footer {
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 14px;
+        /* Ajusta o tamanho do texto */
+    }
 
+    .img_footer {
+        width: 75%;
+        /* Ajusta o tamanho da imagem */
+    }
+
+    .footer_text {
+        font-size: 14px;
+        /* Ajusta o tamanho da fonte */
+    }
+
+    .footer_contato {
+        font-size: 14px;
+        margin-bottom: 5px;
+        /* Ajusta o tamanho do texto de contato */
+    }
+
+    .link_portfolio {
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        top: 0;
+    }
 }
