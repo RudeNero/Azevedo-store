@@ -47,7 +47,7 @@
 .swiper-button-prev,
 .swiper-button-next {
     position: absolute;
-    top: 20%;
+    top: 24%;
     transform: translateY(-50%);
     background-color: transparent;
     cursor: pointer;
