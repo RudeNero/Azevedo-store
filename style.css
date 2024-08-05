@@ -185,6 +185,10 @@ button:active .button_top {
     
 }
 
+.img_pag_mobile{
+    width: 80%;
+}
+
 /* Estilo de arredondamento para a imagem */
 #desktop img,
 .img_grupo_mobile {
@@ -199,6 +203,10 @@ button:active .button_top {
     display: flex;
     justify-content: center;
     margin-top: 1em;
+}
+
+.img_pag_desk{
+    width: 75%;
 }
 
 .referencias {
@@ -280,8 +288,6 @@ button:active .button_top {
         height: auto;
     }
 
-    .img_pag {
-        max-width: 90%;
-        height: auto;
-    }
+
+    
 }
