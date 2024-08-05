@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .footer {
     display: flex;
     justify-content: space-evenly;
     /* Mantém o espaçamento entre os elementos */
-    align-items: center;
+    align-items: flex-end;
     /* Centraliza verticalmente */
     flex-wrap: wrap;
     background: linear-gradient(180deg, rgba(44, 151, 217, 1) 0%, rgba(21, 73, 140, 1) 100%);
@@ -26,12 +33,14 @@
 
 .container_footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     /* Mantém o espaçamento entre os elementos */
+    align-items: flex-start;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     padding-top: 0;
+    
 }
 
 .footer_text {
@@ -50,7 +59,7 @@
     justify-content: flex-start;
     /* Alinha o conteúdo à esquerda */
     flex: 1;
-    gap: 40px;
+    gap: 20px;
     /* Adiciona espaçamento entre as seções de pagamento e contato */
 }
 
@@ -68,7 +77,7 @@
     justify-content: flex-end;
     /* Alinha o conteúdo à direita */
     flex: 1;
-    text-align: right;
+    
 }
 
 .footer_contato {
@@ -80,6 +89,7 @@
 
 .footer_contato p{
     padding-top: 14px;
+    
 }
 
 /* Estilo específico para a imagem */
@@ -90,8 +100,12 @@
     /* Adiciona espaço entre as imagens */
 }
 
+.img_footer_logo{
+    width: 30%;
+}
+
 .footer_right .img_footer_logo {
-    margin-left: 400px;
+    margin-left: 0;
     /* Adiciona espaço entre o logo e as frases da esquerda */
 }
 
@@ -126,7 +140,7 @@
     .footer_contato {
         font-size: 14px;
         text-align: center;
-        padding-bottom: 0;
+        padding-bottom: 10px;
         /* Centraliza o texto de contato em telas menores */
     }
 
