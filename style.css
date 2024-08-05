@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url(./styles/quit.css);
 @import url(./styles/sidebar.css);
+
 /* reset.css */
 /* Um reset básico para normalizar estilos em todos os navegadores */
 * {
@@ -12,24 +13,24 @@
     padding: 0;
     box-sizing: border-box;
     background-color: linear-gradient(180deg, rgba(44, 151, 217, 1) 0%, rgba(21, 73, 140, 1) 100%);
-    
-    
 }
 
-body{
+body {
     cursor: url('./assets/provisório/Arrow.png'), auto;
 }
 
 a {
     cursor: url('./assets/provisório/Hand.png'), auto;
 }
+
 /* style.css */
 /* Container principal */
 
-.container_precos{
+.container_precos {
     display: flex;
     justify-content: center;
 }
+
 .container_kks {
     display: flex;
     flex-wrap: wrap;
@@ -39,8 +40,6 @@ a {
     position: relative;
     width: 80%;
 }
-
-
 
 .box {
     position: relative;
@@ -88,7 +87,10 @@ button {
     transition: transform 0.1s ease;
 }
 
-a:link, a:visited, a:hover, a:active{
+a:link,
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
 }
 
@@ -102,28 +104,25 @@ button:active .button_top {
     transform: translateY(0);
 }
 
-.whats{
+.whats {
     position: fixed;
     bottom: 30px;
     right: 30px;
     z-index: 999;
     background-color: transparent;
-    
-    
 }
 
-.text{
+.text {
     background-color: #f4f4f4;
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.img-whats{
+.img-whats {
     width: 50px;
     height: 50px;
     background-color: transparent;
-    
 }
 
 .container_horario {
@@ -155,90 +154,83 @@ button:active .button_top {
     /* Centraliza o texto dentro da div */
 }
 
-
-.quit-mobile{
+.quit-mobile {
     display: none;
 }
 
-.container-quit{
+.container-quit {
     display: flex;
     justify-content: center;
     margin-top: 1em;
 }
 
-.container_grupo{
+.container_grupo {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 1em;
-    
-    
-    
-
 }
 
-.img_grupo{
-    border-radius: 40px;
+/* Estilo do link para ocupar a área da imagem */
+.link_grupo {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
+.img_grupo_desktop {
+    width: 70%;
+    
+}
 
+/* Estilo de arredondamento para a imagem */
+#desktop img,
+.img_grupo_mobile {
+    border-radius: 20px;
+}
 
-#mobile{
+#mobile {
     display: none;
 }
-       
 
-
-.container_pag{
+.container_pag {
     display: flex;
     justify-content: center;
     margin-top: 1em;
-    
 }
 
-
-
-.referencias{
+.referencias {
     margin-bottom: 12px;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Responsividade */
-
-@media (max-width: 600px){
+@media (max-width: 600px) {
     .container {
         row-gap: 30px;
         column-gap: 10px;
-        
     }
-    .container_kks{
+
+    .container_kks {
         padding-top: 0px;
         width: 100%;
     }
 
     .container_horario {
         min-width: 200px;
-    /* Reduz a largura mínima em telas menores */
         width: 90%;
-    /* Define a largura como 90% da tela */
     }
 
-    .text{
+    .text {
         font-size: 14px;
     }
+
     .box {
         width: calc(50% - 10px);
     }
 
-    .banner{
+    .banner {
         width: 90%;
     }
 
@@ -249,7 +241,7 @@ button:active .button_top {
         bottom: -25px;
     }
 
-    .whats{
+    .whats {
         right: 20px;
     }
 
@@ -262,41 +254,34 @@ button:active .button_top {
         display: block;
         margin-left: 1vh;
         margin-right: 1vh;
-        
-
     }
 
-    .quit-desktop{
+    .quit-desktop {
         display: none;
-        
     }
 
-   #desktop, .clickable-button{
-    display: none;
-   }
+    #desktop {
+        display: none;
+    }
 
-   .grupo_mobile{
-    display: flex;
-    justify-content: center;
-    max-width: 90%;
-   }
-   #mobile{
-    display: block;
-    max-width: 100%;
-    height: auto;
+    .img_grupo_mobile {
+        border-radius: 20px;
+    }
 
-   }
+    .grupo_mobile {
+        display: flex;
+        justify-content: center;
+        max-width: 90%;
+    }
 
-   .img_grupo{
-    border-radius: 20px;
-   }
+    #mobile {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
 
-   .img_pag{
-    max-width: 90%;
-    height: auto;
-   }
-
-
-
-
+    .img_pag {
+        max-width: 90%;
+        height: auto;
+    }
 }
