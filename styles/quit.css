@@ -1,26 +1,33 @@
-
-.texto_pag_quit {
-    /* Centraliza a caixa horizontalmente */
-    margin: 0 auto;
-    /* Define a largura máxima da caixa */
-    max-width: 800px;
-    /* Adiciona um pouco de espaço interno */
-    padding: 20px;
-    /* Adiciona uma borda e arredonda os cantos */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    /* Define o fundo da caixa */
-    background-color: #f9f9f9;
-    /* Alinha o texto ao centro */
-    text-align:start;
-    /* Adiciona uma sombra leve */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: "Russo One", sans-serif;
+body {
+    font-family: "Sarala", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-/* Para garantir que o texto dentro da caixa também esteja centralizado */
+p {
+    line-height: 24px;
+}
+
+h1,
+h2 {
+    line-height: 120%;
+}
+
+div {
+    line-height: 1.2em;
+}
+
+.texto_pag_quit {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .texto_pag_quit h1 {
     margin-top: 0;
 }
@@ -29,8 +36,21 @@
     margin-bottom: 0;
 }
 
-@media (max-width: 600px){
-    .texto_pag_quit{
+ul {
+    padding-left: 20px;
+    list-style-position: inside;
+}
+
+.texto_pag_quit ul {
+    padding-left: 20px;
+}
+
+.texto_pag_quit li {
+    padding-left: 5px;
+}
+
+@media (max-width: 600px) {
+    .texto_pag_quit {
         margin: 20px;
     }
 }
