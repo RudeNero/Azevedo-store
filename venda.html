@@ -13,25 +13,6 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link">Menu</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="index.html" class="dropdown-link"
-                  >COMPRE SEU KK AQUI</a
-                >
-              </li>
-              <li>
-                <a href="venda.html" class="dropdown-link"
-                  >VENDA SEU QUIT AQUI!</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
       <img
         src="./assets/provisório/LOGO5 2.png"
         alt="Logotipo"
@@ -45,12 +26,19 @@
             <img
               src="./assets/provisório/Banner1-Fachadav2 1.png"
               alt="Imagem 1"
+              id="cr_desktop"
             />
           </div>
           <div class="swiper-slide">
             <img
-              src="./assets/provisório/Banner1-Fachadav2 1.png"
+              src="./assets/provisório/Banner-Fachada-Desk.png"
               alt="Imagem 2"
+              id="cr_desktop"
+            />
+            <img
+              src="./assets/provisório/Banner-Fachada-Mobile.jpg"
+              alt="imagem 2 mobile"
+              id="cr_mobile"
             />
           </div>
         </div>
@@ -70,22 +58,48 @@
           />
         </div>
       </div>
+
       <div class="container_horario">
         <h2 class="text">HORÁRIO DE ATENDIMENTO 08:00 ÀS 23:59</h2>
       </div>
-      <div>
-        <h1>COMPRO QUIT</h1>
+
+      <div id="sidebar">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="venda.html">@QUIT</a></li>
+          <li>
+            <a href="https://www.facebook.com/groups/603133823040009"
+              >GRUPO FACEBOOK</a
+            >
+          </li>
+          <li>
+            <a href="https://chat.whatsapp.com/Bk6SZKeN1dmDnSSLtLw7yl"
+              >GRUPO WHATSAPP</a
+            >
+          </li>
+          <li><a href="https://wa.me/554588403532">CONTATO</a></li>
+        </ul>
+      </div>
+
+      <div class="texto_pag_quit">
+        <h1>ESTÁ PARANDO DE JOGAR?</h1>
+        <h3>
+          Compramos seu quit do Ragnarok no servidor THOR, entre em contato
+          atraves:
+        </h3>
+        <ul>
+          <li>CHAT WHATSAPP</li>
+          <li>GRUPO DO FACEBOOK</li>
+          <li>PELO PERFIL OFICIAL</li>
+        </ul>
         <p>
-          Lorem Ipsum é simplesmente uma simulação de texto da indústria
-          tipográfica e de impressos, e vem sendo utilizado desde o século XVI,
-          quando um impressor desconhecido pegou uma bandeja de tipos e os
-          embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum
-          sobreviveu não só a cinco séculos, como também ao salto para a
-          editoração eletrônica, permanecendo essencialmente inalterado. Se
-          popularizou na década de 60, quando a Letraset lançou decalques
-          contendo passagens de Lorem Ipsum, e mais recentemente quando passou a
-          ser integrado a softwares de editoração eletrônica como Aldus
-          PageMaker.
+          Envie a lista de seus equipamentos e a quantidade de zenys, eu irei
+          avaliar e farei minha oferta.
+        </p>
+        <p>O pagamento é feito por transferencia Online no ato da troca.</p>
+        <p>
+          Tenho os bancos Brasil, Santander, Bradesco, Caixa e Itau e se
+          necessário farei DOC ou TED para os demais bancos.
         </p>
       </div>
 
@@ -143,16 +157,6 @@
           /></a>
         </div>
       </div>
-
-      <a
-        href="https://wa.me/554588403532?text=Teste%20dúvidas"
-        target="”_blank”"
-        class="whats"
-        ><img
-          alt="Chat on WhatsApp"
-          src="./assets/whats_logo/whatsapp logo_2.png"
-          class="img-whats"
-      /></a>
     </main>
     <footer class="footer">
       <div class="container_footer">
@@ -172,25 +176,18 @@
       <a href="#"><h3>LINK</h3></a>
     </div>
 
+    <a
+      href="https://wa.me/554588403532?text=Teste%20dúvidas"
+      target="”_blank”"
+      class="whats"
+      ><img
+        alt="Chat on WhatsApp"
+        src="./assets/whats_logo/whatsapp logo_2.png"
+        class="img-whats"
+      />
+    </a>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        spaceBetween: 0,
-        slidesPerView: 1, // Mostrar apenas um slide por vez
-        loop: true, // Habilitar o loop infinito
-        autoplay: {
-          delay: 5000, // Intervalo de tempo em milissegundos entre cada slide
-          disableOnInteraction: false, // Manter o autoplay mesmo se o usuário interagir
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          type: "arrows",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <script src="./scripts/swiper-init.js"></script>
+    <script src="./scripts/sidebar.js"></script>
   </body>
 </html>

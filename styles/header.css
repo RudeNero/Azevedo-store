@@ -5,72 +5,17 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    /* Fixar o header no topo */
     top: 0;
     left: 0;
     width: 100%;
-    /* Garantir que o header ocupe toda a largura da tela */
-    z-index: 10;
-    /* Garantir que o header fique acima de outros elementos */
+    
 }
 
 .header-img {
     width: 15em;
 }
 
-.nav {
-    position: absolute;
-    left: 20px;
-    /* Ajuste conforme necessário */
-}
 
-.nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.nav-item {
-    position: relative;
-}
-
-.nav-link {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(44, 151, 217, 1);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 160px;
-    z-index: 20;
-    
-}
-
-.dropdown-menu .dropdown-link {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-.dropdown-menu .dropdown-link:hover {
-    background-color: rgba(21, 73, 140, 1);
-}
-
-.nav-item:hover .dropdown-menu {
-    display: block;
-}
 
 @media (min-width: 600px) {
     .header-img {
