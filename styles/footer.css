@@ -19,6 +19,11 @@
     padding: 10px 0;
 }
 
+.link_portfolio h4{
+    color: white;
+
+}
+
 .container_footer {
     display: flex;
     justify-content: space-evenly;

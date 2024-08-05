@@ -60,7 +60,6 @@ button {
     --button_color: #BDD472;
     --button_outline_color: #000000;
     font-size: 17px;
-    font-weight: bold;
     border: none;
     border-radius: var(--button_radius);
     background: var(--button_outline_color);
@@ -73,6 +72,7 @@ button {
     z-index: 1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.1s ease;
+    font-family: "Russo One", sans-serif;
 }
 
 .button_top {
