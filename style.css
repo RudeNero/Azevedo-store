@@ -172,7 +172,12 @@ button:active .button_top {
     margin-top: 1em;
     
     
+    
 
+}
+
+.img_grupo{
+    border-radius: 40px;
 }
 
 
@@ -280,6 +285,10 @@ button:active .button_top {
     max-width: 100%;
     height: auto;
 
+   }
+
+   .img_grupo{
+    border-radius: 20px;
    }
 
    .img_pag{
