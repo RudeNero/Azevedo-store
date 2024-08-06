@@ -181,12 +181,15 @@ button:active .button_top {
 }
 
 .img_grupo_desktop {
-    width: 70%;
+    width: 60%;
     
 }
 
 .img_pag_mobile{
     width: 80%;
+}
+.img_pag_desk{
+    width: 60%;
 }
 
 /* Estilo de arredondamento para a imagem */
@@ -205,9 +208,7 @@ button:active .button_top {
     margin-top: 1em;
 }
 
-.img_pag_desk{
-    width: 72%;
-}
+
 
 .referencias {
     margin-bottom: 12px;
