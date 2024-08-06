@@ -23,11 +23,11 @@
     display: flex;
     justify-content: center;
     background: #15498c;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
-.link_portfolio h4{
-    color: white;
+.link_portfolio h5{
+    color: rgb(155, 155, 155);
 
 }
 
@@ -54,7 +54,7 @@
 
 .footer_left {
     display: flex;
-    align-items: center;
+    align-items: start;
     /* Alinha o conteúdo centralizado verticalmente */
     justify-content: flex-start;
     /* Alinha o conteúdo à esquerda */
@@ -66,7 +66,7 @@
 .footer_left>div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     /* Centraliza os itens dentro do div */
 }
 
@@ -87,17 +87,13 @@
     padding-bottom: 36px;
 }
 
-.footer_contato p{
-    padding-top: 14px;
-    
-}
+
 
 /* Estilo específico para a imagem */
 .img_footer {
     max-width: 100%;
     height: auto;
-    margin-left: 10px;
-    /* Adiciona espaço entre as imagens */
+    
 }
 
 .img_footer_logo{
@@ -161,7 +157,9 @@
         width: 100%;
         /* Ocupa a largura total */
     }
-
+    .footer_left>div{
+        align-items: center;
+    }
     .footer_right {
         align-items: center;
         /* Centraliza o conteúdo em telas menores */
