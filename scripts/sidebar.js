@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function () {
   const sidebar = document.getElementById("sidebar");
-  const sidebarTop = 480; // Posição inicial do sidebar em relação ao topo da página
+  const sidebarTop = 490; // Posição inicial do sidebar em relação ao topo da página
   const scrollY = window.scrollY; // A posição atual do scroll
 
   if (scrollY >= sidebarTop) {

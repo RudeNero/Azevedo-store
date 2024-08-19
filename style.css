@@ -6,8 +6,6 @@
 @import url(./styles/quit.css);
 @import url(./styles/sidebar.css);
 
-/* reset.css */
-/* Um reset básico para normalizar estilos em todos os navegadores */
 * {
     margin: 0;
     padding: 0;
@@ -16,15 +14,12 @@
 }
 
 body {
-    cursor: url('./assets/provisório/Arrow.png'), auto;
+    cursor: url('./assets/Icones/Arrow.png'), auto;
 }
 
 a {
-    cursor: url('./assets/provisório/Hand.png'), auto;
+    cursor: url('./assets/Icones/Hand.png'), auto;
 }
-
-/* style.css */
-/* Container principal */
 
 .container_precos {
     display: flex;
@@ -54,7 +49,6 @@ a {
     background-color: transparent;
 }
 
-/* Estilo para o botão */
 button {
     --button_radius: 0.75em;
     --button_color: #BDD472;
@@ -95,12 +89,10 @@ a:active {
 }
 
 button:hover .button_top {
-    /* Pull the button upwards when hovered */
     transform: translateY(-0.33em);
 }
 
 button:active .button_top {
-    /* Push the button downwards when pressed */
     transform: translateY(0);
 }
 
@@ -128,30 +120,18 @@ button:active .button_top {
 .container_horario {
     display: flex;
     justify-content: center;
-    /* Centraliza o conteúdo horizontalmente */
     align-items: center;
-    /* Centraliza o conteúdo verticalmente */
     padding: 10px;
-    /* Reduz o espaçamento interno */
     margin: 20px auto;
     margin-bottom: 0px;
-    /* Centraliza a div e adiciona espaçamento acima e abaixo */
     border-radius: 16px;
-    /* Borda levemente arredondada */
     background-color: #f4f4f4;
-    /* Cor de fundo */
     border: 1px solid #ccc;
-    /* Borda */
     width: auto;
-    /* Permite que a largura seja ajustada automaticamente ao conteúdo */
     min-width: 300px;
-    /* Define uma largura mínima para evitar que a div seja muito estreita */
     max-width: 600px;
-    /* Define uma largura máxima para evitar que a div se expanda muito */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Adiciona uma sombra suave */
     text-align: center;
-    /* Centraliza o texto dentro da div */
 }
 
 .quit-mobile {
@@ -164,7 +144,6 @@ button:active .button_top {
     margin-top: 1em;
 }
 
-
 .container_grupo {
     display: flex;
     justify-content: center;
@@ -173,7 +152,6 @@ button:active .button_top {
     margin-top: 1em;
 }
 
-/* Estilo do link para ocupar a área da imagem */
 .link_grupo {
     display: contents;
     position: relative;
@@ -183,17 +161,16 @@ button:active .button_top {
 
 .img_grupo_desktop {
     width: 60%;
-    
 }
 
-.img_pag_mobile{
+.img_pag_mobile {
     width: 80%;
 }
-.img_pag_desk{
+
+.img_pag_desk {
     width: 60%;
 }
 
-/* Estilo de arredondamento para a imagem */
 #desktop img,
 .img_grupo_mobile {
     border-radius: 20px;
@@ -209,19 +186,17 @@ button:active .button_top {
     margin-top: 1em;
 }
 
-
-
 .referencias {
     margin-bottom: 12px;
 }
 
-.link_ref{
+.link_ref {
     display: contents;
     position: relative;
     width: 100%;
     height: 100%;
 }
-/* Responsividade */
+
 @media (max-width: 600px) {
     .container {
         row-gap: 30px;
@@ -295,7 +270,4 @@ button:active .button_top {
         max-width: 100%;
         height: auto;
     }
-
-
-    
 }
